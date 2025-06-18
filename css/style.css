@@ -1,0 +1,28 @@
+@import url(react.css);
+
+
+:root{
+
+    /* 整體色系 */
+
+    --main-color: #040404;
+
+    --text-main-color: #ffffff;
+
+    --text-main-color-2: #7f7f7f;
+
+    --other-color-1: #E81996;
+    
+    --other-color-2: #1d387d;
+    
+    --other-color-3: #4382a3;
+    
+    --other-color-4: #c2c2c2;
+    
+    --other-color-5: #222222;
+    
+    --other-color-6: #d9d9d9;
+
+    --text-style: "Pixelify Sans", sans-serif;
+
+}
