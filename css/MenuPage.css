@@ -25,6 +25,7 @@ body {
     font-size: 20px;
     text-decoration: none;
     color: var(--text-main-color);
+    position: relative;
 }
 
 .top img{
@@ -36,6 +37,8 @@ body {
     display: flex;
     margin-left: 45px;
 }
+
+/* 分類hover效果 */
 
 .top ul li a:hover{
     color: pink;
@@ -72,6 +75,7 @@ body {
     width: 50%;
     transform: translateX(-100%);
 }
+
 .top li{
     flex-grow: 1;
 }
