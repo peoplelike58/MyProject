@@ -87,15 +87,15 @@ body {
 
 .eventWrapper{
     width: 1200px;
-    height: 300px;
+    height: 400px;
     background-image: url(../img/big_pic.jpg);
     background-size: cover;
-    background-position: bottom center;
+    background-position: center center;
 }
 
 .eventWrapper h1{
     font-family: var(--text-style);
-    font-size: 70px;
+    font-size: 100px;
     color: var(--text-main-color);
     height: 300px;
     display: flex;
@@ -181,11 +181,6 @@ body {
     letter-spacing: 2px;
 }
 
-/* .eventText span{
-    border-bottom: 1px solid var(--text-main-color);
-    padding-top: 20px;
-} */
-
 /* span border-bottom 動畫效果 */
 .eventText span{
     position: relative;
@@ -233,12 +228,6 @@ body {
     background: var(--text-main-color);
     color: black;
 }
-
-
-
-
-
-
 
 
 /* Footer */
