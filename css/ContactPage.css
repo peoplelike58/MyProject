@@ -7,6 +7,7 @@ body {
 .wrapper {
     width: 1440px;
     margin: 0 auto;
+    /* border: 1px solid red; */
 }
 
 /* TOP */
@@ -81,10 +82,9 @@ body {
     margin-right: 10px;
 }
 
+/* contactTop */
 
-/* main-top */
-
-.storeWrapper{
+.contactTop{
     width: 1440px;
     height: 400px;
     background-image: url(../img/big_pic.jpg);
@@ -92,7 +92,7 @@ body {
     background-position: center center;
 }
 
-.storeWrapper h1{
+.contactTop h1{
     font-family: var(--text-style);
     font-size: 120px;
     color: var(--text-main-color);
@@ -102,66 +102,89 @@ body {
     justify-content: center;
 }
 
-/* storeMain */
+/* contactMain */
 
-.storeMain{
+.contactWrapper{
     display: flex;
-    margin: 30px 0;
+    justify-content: center;
     align-items: center;
+}
+
+.contactIndex{
+    width: 1000px;
+    height: 700px;
+    margin-top: 30px;
+    background-color: #222;
+    border-radius: 20px;
+}
+
+.contactIndex ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.contactIndex ul li {
+    display: flex;
     justify-content: center;
 }
 
-.storeLe{
+.contactIndex ul li input{
     width: 350px;
-    height: 540px;
-    border-radius: 10px;
-    color: var(--text-main-color);
-    background-color: #120F10;
-    margin-right: 60px;
-    padding: 30px;
-    line-height: 2;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background: white;
+    border: 3px solid #979797;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 15px;
 }
 
-.storeLe li{
-    display: flex;
+.userEmail,
+.userCont {
+    width: 500px;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background: white;
+    border: 3px solid #979797;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    display: block;
+    text-align: center;
 }
 
-.storeTitle img{
-    width: 40px;
-    height: auto;
+.userEmail {
+    margin-bottom: 50px;
 }
 
-.storeTitle h2{
-    font-size: 24px;
-    align-items: center;
-    margin-left: 4px;
-    margin-bottom: 8px;
+.userCont {
+    width: 600px;
+    height: 300px;
+    margin-top: 0;
 }
 
-.storeIndex{
-    flex-direction: column;
-    margin-left: 45px;
-}
-
-.storeIndex p:first-child{
+button {
+    display: block;
+    margin: 30px auto 0 auto;
+    padding: 10px 100px;
     font-size: 20px;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
 }
 
-.storeIndex p:last-child{
-    font-size: 14px;
-    margin-bottom: 8px;
-    color: #E81996;
+button:active{
+    color: rgb(255, 129, 150);
+    background-color: var(--other-color-2);
 }
 
-.storePhoto p{
-    font-size: 20px;
-    margin-left: 45px;
-    letter-spacing: 2px;
-}
-
-iframe{
-    border-radius: 10px;
-}
 
 /* Footer */
 .topIcon ul{

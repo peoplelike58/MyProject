@@ -5,22 +5,21 @@ body {
 }
 
 .wrapper {
-    width: 1200px;
+    width: 1440px;
     margin: 0 auto;
-    /* border: 1px solid red; */
 }
 
 /* TOP */
 .top{
     display: flex;
-    width: 1200px;
+    width: 1440px;
     height: 90px;
     align-items: center;
 }
 
 .top li a{
     font-family: var(--text-style);
-    font-size: 20px;
+    font-size: 24px;
     text-decoration: none;
     color: var(--text-main-color);
     position: relative;
@@ -31,7 +30,7 @@ body {
 }
 
 .top ul{
-    width: 1200px;
+    width: 1440px;
     display: flex;
     margin-left: 45px;
 }
@@ -87,7 +86,7 @@ body {
 .cycle{
     /* border: 1px solid blue; */
     display: block;
-    width: 1200px;
+    width: 1440px;
     height: 400px;
     background-image: url(../img/big_pic.jpg);
     background-size: cover;
@@ -99,14 +98,14 @@ body {
 
 .story{
     position: relative;
-    width: 1200px;
+    width: 1440px;
     height: 240px;
 }
 
 .story h1{
     font-family: var(--text-style);
     color: var(--text-main-color);
-    font-size: 40px;
+    font-size: 48px;
 
     position: absolute;
     top: 10%;
@@ -130,7 +129,7 @@ body {
 
 .story .img-gif{
     display: block;
-    width: 1200px;
+    width: 1440px;
     height: 240px;
     background-image: url(../img/story_2.gif);
     opacity: 0.2;
@@ -164,7 +163,7 @@ body {
     /* height: 80px; */
     font-family: var(--text-style);
     color: var(--text-main-color);
-    font-size: 40px;
+    font-size: 48px;
     text-align: center;
     margin-right: 10px;
 }
@@ -216,7 +215,7 @@ body {
 
 .menu{
     /* border: 1px solid red; */
-    width: 1200px;
+    width: 1440px;
     height: 260px;
 }
 
@@ -230,16 +229,16 @@ body {
 }
 
 .menu ul li h3{
-    width: 237px;
+    width: 242px;
     font-family: var(--text-style);
     color: var(--text-main-color);
-    font-size: 40px;
+    font-size: 48px;
     text-align: center;
 }
 
 .menuImg1 img{
     display: block;
-    width: 718px;
+    width: 958px;
     height: 260px;
     object-fit: cover;
 }
@@ -268,7 +267,8 @@ body {
 /* 照片影集 */
 
 .photoWrapper{
-    width: 1200px;
+    width: 1440px;
+    text-align: center;
 }
 
 .photoTop ul{
@@ -293,7 +293,7 @@ body {
 .photoWrapper h3{
     font-family: var(--text-style);
     color: var(--text-main-color);
-    font-size: 40px;
+    font-size: 48px;
     text-align: center;
     margin: 40px auto;
 
@@ -301,6 +301,7 @@ body {
 
 .photoButtom ul{
     display: flex;
+    justify-content: center;
 }
 
 .photoButtom img{
@@ -319,14 +320,14 @@ body {
 .topIcon ul{
     display: flex;
     align-items: center;
-    width: 1200px;
+    width: 1440px;
     margin: 0 auto;
 }
 
 .topText p{
     color: var(--text-main-color);
     font-family: var(--text-style);
-    font-size: 20px;
+    font-size: 24px;
     margin-left: 50px;
 }
 
@@ -337,13 +338,14 @@ body {
 }
 
 .bottomText ul{
-    width: 1200px;
+    width: 1440px;
     display: flex;
 }
 
 .bottomText ul li{
     display: flex;
     flex-grow: 1;
+    margin-left: 40px;
 }
 
 .bottomText ul li img{

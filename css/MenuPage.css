@@ -5,7 +5,7 @@ body {
 }
 
 .wrapper {
-    width: 1200px;
+    width: 1440px;
     margin: 0 auto;
     font-family: var(--text-style);
     color: var(--text-main-color);
@@ -14,14 +14,14 @@ body {
 /* TOP */
 .top{
     display: flex;
-    width: 1200px;
+    width: 1440px;
     height: 90px;
     align-items: center;
 }
 
 .top li a{
     font-family: var(--text-style);
-    font-size: 20px;
+    font-size: 24px;
     text-decoration: none;
     color: var(--text-main-color);
     position: relative;
@@ -32,7 +32,7 @@ body {
 }
 
 .top ul{
-    width: 1200px;
+    width: 1440px;
     display: flex;
     margin-left: 45px;
 }
@@ -86,7 +86,7 @@ body {
 /* main */
 
 .menuWrapper{
-    width: 1200px;
+    width: 1440px;
     height: 820px;
     background-image: url(../img/menu_bgi.png);
     background-position: 50% 50%;
@@ -95,11 +95,11 @@ body {
 }
 
 .textHeader{
-    width: 1200px;
+    width: 1440px;
     height: 200px;
     background-size: cover;
     background-position: center center;
-    font-size: 100px;
+    font-size: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,12 +112,14 @@ body {
 
 .textLeft{
     line-height: 1.6;
-    margin: 100px 30px 0 120px;
+    flex-grow: 1;
+    margin: 150px 10px 0 250px;
 }
 
 .textRight{
     line-height: 1.6;
-    margin: 100px 30px 0 50px;
+    flex-grow: 1;
+    margin: 150px 10px 0;
 }
 
 .menuWrapper-2{
@@ -150,14 +152,14 @@ body {
 .topIcon ul{
     display: flex;
     align-items: center;
-    width: 1200px;
+    width: 1440px;
     margin: 0 auto;
 }
 
 .topText p{
     color: var(--text-main-color);
     font-family: var(--text-style);
-    font-size: 20px;
+    font-size: 24px;
     margin-left: 50px;
 }
 
@@ -168,13 +170,14 @@ body {
 }
 
 .bottomText ul{
-    width: 1200px;
+    width: 1440px;
     display: flex;
 }
 
 .bottomText ul li{
     display: flex;
     flex-grow: 1;
+    margin-left: 40px;
 }
 
 .bottomText ul li img{
