@@ -7,7 +7,6 @@ body {
 .wrapper {
     width: 1440px;
     margin: 0 auto;
-    /* border: 1px solid red; */
 }
 
 /* TOP */
@@ -82,110 +81,83 @@ body {
     margin-right: 10px;
 }
 
-/* contactTop */
 
-.contactTop{
+/* shopTop */
+
+.shop{
+    position: relative;
     width: 1440px;
     height: 400px;
-    background-image: url(../img/big_pic.jpg);
-    background-size: cover;
-    background-position: center center;
+    overflow: hidden;
 }
 
-.contactTop h1{
-    font-family: var(--text-style);
-    font-size: 120px;
-    color: var(--text-main-color);
-    height: 300px;
+.shopImgList{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 100%;
+    animation: autoplay 10s infinite;
 }
 
-/* contactMain */
-
-.contactWrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.shopImg{
+    flex: 0 0 100%;
 }
 
-.contactIndex{
-    width: 1000px;
+.shopImg img{
+    width: auto;
     height: auto;
-    margin-top: 10px;
-    border-radius: 20px;
+    object-fit: cover;
 }
 
-.contactIndex ul{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+@keyframes autoplay{
+    0%, 33% { transform: translateX(0); }
+    33%, 66% { transform: translateX(-100%); }
+    66%, 100% { transform: translateX(-200%); }
 }
 
-.contactIndex ul li {
-    display: flex;
-    justify-content: center;
+/* 商品列表分類區域 */
+
+nav{
+    color: var(--text-main-color);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 80px;
+    padding-left: 30px;
+    margin-right: 20px;
+    line-height: 1.6;
 }
 
-.contactIndex ul li input{
-    width: 300px;
-    color: black;
-    font-size: 18px;
-    font-weight: 400;
-    background: #222;
-    border: 3px dashed white;
+nav ul{
+    margin-bottom: 30px;
+}
+
+h1{
+   font-size: 32px;
+   margin-bottom: 10px; 
+}
+
+h1::before{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 35px;
+    background-color: #81a17a;
+    float: left;
     margin-right: 10px;
-    margin-bottom: 10px;
     margin-top: 10px;
-    margin-left: 15px;
-    border-radius: 32px;
-    padding: 30px;
 }
 
-.userEmail,
-.userCont {
-    width: 650px;
-    color: black;
-    font-size: 18px;
-    font-weight: 400;
-    background: #222;
-    border-radius: 32px;
-    border: 3px dashed white;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 30px;
-    display: block;
-    text-align: center;
+nav li{
+    font-size: 24px;
+    margin-left: 20px;
 }
 
-.userEmail {
-    margin-bottom: 50px;
-}
 
-.userCont {
-    width: 650px;
-    height: 300px;
-    margin-top: 0;
-}
 
-button {
-    display: block;
-    margin: 30px auto 0 auto;
-    padding: 10px 100px;
-    font-size: 20px;
-    color: black;
-    background-color: white;
-    border: none;
-    border-radius: 20px;
-}
 
-button:active{
-    color: rgb(255, 129, 150);
-    background-color: var(--other-color-2);
-}
+
+
+
+
+
 
 
 /* Footer */
@@ -231,3 +203,4 @@ button:active{
     color: var(--text-main-color);
     margin-top: 5px;
 }
+

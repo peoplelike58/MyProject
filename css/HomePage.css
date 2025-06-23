@@ -225,6 +225,10 @@ body {
     flex-grow: 1;
 }
 
+.events ul li img{
+    object-fit: cover;
+}
+
 .events ul li h2{
     /* height: 80px; */
     font-family: var(--text-style);
