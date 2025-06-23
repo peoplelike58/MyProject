@@ -355,19 +355,32 @@ body {
     text-align: center;
 }
 
+.photoTop{
+    margin-top: 20px;
+}
+
 .photoTop ul{
     display: flex;
 }
 
 .photoTop ul li{
+    display: flex;
     flex-grow: 1;
+    transition: 1.5s;
+}
+
+.photoLeft1Text, .photoLeft2Text, .photoRight1Text, .photoRight2Text {
+    display: none;
+    font-family: var(--text-style);
+    color: var(--text-main-color);
+    font-size: 20px;
 }
 
 .photoTop img{
     width: 250px;
     height: 250px;
     border-radius: 20px;
-    margin: 20px 20px 0 20px;
+    margin: 0 20px 0 20px;
 }
 
 .photoTop img:hover{

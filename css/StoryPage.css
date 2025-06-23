@@ -96,6 +96,13 @@ body {
     height: 400px;
     margin: auto auto;
     margin-top: 50px;
+    animation: bgSm 5s infinite linear;
+}
+
+@keyframes bgSm {
+    0%, 33% { transform: scale(1); }
+    33%, 66% { transform: scale(1.2); }
+    66%, 100% { transform: scale(1.5); }
 }
 
 /* main-bottom */

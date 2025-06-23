@@ -114,7 +114,7 @@ body {
     width: 1000px;
     height: 700px;
     margin-top: 30px;
-    background-color: #222;
+    /* background-color: #222; */
     border-radius: 20px;
 }
 
@@ -130,21 +130,22 @@ body {
 }
 
 .contactIndex ul li input{
-    width: 350px;
+    width: 300px;
     color: black;
     font-size: 18px;
     font-weight: 400;
     background: white;
     border: 3px solid #979797;
+    margin-right: 10px;
     margin-bottom: 10px;
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 15px;
     padding: 15px;
 }
 
 .userEmail,
 .userCont {
-    width: 500px;
+    width: 650px;
     color: black;
     font-size: 18px;
     font-weight: 400;
@@ -164,7 +165,7 @@ body {
 }
 
 .userCont {
-    width: 600px;
+    width: 650px;
     height: 300px;
     margin-top: 0;
 }
