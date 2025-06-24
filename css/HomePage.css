@@ -378,6 +378,8 @@ body {
     font-family: var(--text-style);
     color: var(--text-main-color);
     font-size: 20px;
+    text-align: left;
+    margin-top: 60px;
 }
 
 .photoTop img{

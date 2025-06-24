@@ -116,11 +116,17 @@ body {
 
 /* 商品列表分類區域 */
 
+.shopWrapper{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
 nav{
     color: var(--text-main-color);
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-top: 80px;
-    padding-left: 30px;
+    margin-top: 70px;
+    padding-left: 20px;
     margin-right: 20px;
     line-height: 1.6;
 }
@@ -130,14 +136,15 @@ nav ul{
 }
 
 h1{
-   font-size: 32px;
-   margin-bottom: 10px; 
+    width: 200px;
+    font-size: 32px;
+    margin-bottom: 10px; 
 }
 
 h1::before{
     content: '';
     display: block;
-    width: 10px;
+    width: 3px;
     height: 35px;
     background-color: #81a17a;
     float: left;
@@ -149,6 +156,114 @@ nav li{
     font-size: 24px;
     margin-left: 20px;
 }
+
+nav li:hover{
+    color: pink;
+}
+
+/* 主商品區 */
+
+.shopList{
+    width: 90%;
+    margin-top: 70px;
+    /* border: 1px solid red; */
+}
+
+.main ul{
+    display: flex;
+    margin-left: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.main ul li{
+    margin: 0 20px;
+    margin-bottom: 20px;
+    background-color: #120F10;
+    border-radius: 20px;
+}
+
+.main img{
+    /* border: 1px solid red; */
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.main h2{
+    color: var(--text-main-color);
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.main p{
+    color: var(--text-main-color);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.main a{
+    text-decoration: none;
+}
+
+.main .shopBtn{
+    display: block;
+    background-color: white;
+    color: black;
+    width: 120px;
+    margin: 0 auto;
+    line-height: 2;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.main .shopBtn:hover{
+    color: pink;
+    background-color: #1d387d;
+}
+
+/* page */
+
+.page{
+    margin: 30px 10px;
+}
+
+.page ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.page ul li{
+    margin-right: 20px;
+}
+
+.page li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--text-main-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
