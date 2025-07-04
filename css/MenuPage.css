@@ -5,7 +5,7 @@ body {
 }
 
 .wrapper {
-    width: 1440px;
+    width: 90%;
     margin: 0 auto;
     font-family: var(--text-style);
     color: var(--text-main-color);
@@ -14,7 +14,7 @@ body {
 /* main */
 
 .menuWrapper{
-    width: 1440px;
+    width: 100%;
     height: 820px;
     background-image: url(../img/menu_bgi.png);
     background-position: 50% 50%;

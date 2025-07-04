@@ -5,7 +5,7 @@ body {
 }
 
 .wrapper {
-    width: 1440px;
+    width: 90%;
     margin: 0 auto;
     /* border: 1px solid red; */
 }
@@ -13,7 +13,7 @@ body {
 /* contactTop */
 
 .contactTop{
-    width: 1440px;
+    width: 100%;
     height: 400px;
     background-image: url(../img/big_pic.jpg);
     background-size: cover;
@@ -39,7 +39,7 @@ body {
 }
 
 .contactIndex{
-    width: 1000px;
+    width: 100%;
     height: auto;
     margin-top: 10px;
     border-radius: 20px;
@@ -58,7 +58,7 @@ body {
 
 .contactIndex ul li input{
     width: 300px;
-    color: black;
+    color: white;
     font-size: 18px;
     font-weight: 400;
     background: #222;
@@ -73,8 +73,8 @@ body {
 
 .userEmail,
 .userCont {
-    width: 650px;
-    color: black;
+    width: 690px;
+    color: white;
     font-size: 18px;
     font-weight: 400;
     background: #222;
@@ -90,12 +90,13 @@ body {
 }
 
 .userEmail {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .userCont {
-    width: 650px;
-    height: 300px;
+    width: 690px;
+    height: 100px;
     margin-top: 0;
 }
 

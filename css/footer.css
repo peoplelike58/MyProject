@@ -4,7 +4,7 @@
 .topIcon ul{
     display: flex;
     align-items: center;
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .bottomText ul{
-    width: 1440px;
+    width: 100%;
     display: flex;
 }
 
