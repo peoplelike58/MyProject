@@ -1,0 +1,45 @@
+@import url(react.css);
+
+/* Footer */
+.topIcon ul{
+    display: flex;
+    align-items: center;
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.topText p{
+    color: var(--text-main-color);
+    font-family: var(--text-style);
+    font-size: 24px;
+    margin-left: 50px;
+}
+
+.topIcon{
+   display: flex;
+   gap: 20px;
+   margin: 10px 50px 10px auto;
+}
+
+.bottomText ul{
+    width: 1440px;
+    display: flex;
+}
+
+.bottomText ul li{
+    display: flex;
+    flex-grow: 1;
+    margin-left: 40px;
+}
+
+.bottomText ul li img{
+    margin-right: 15px;
+    margin-left: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottomText ul li p{
+    color: var(--text-main-color);
+    margin-top: 5px;
+}

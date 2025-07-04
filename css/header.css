@@ -1,0 +1,73 @@
+@import url(react.css);
+
+/* TOP */
+.top{
+    display: flex;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+}
+
+.top li a{
+    font-family: var(--text-style);
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--text-main-color);
+    position: relative;
+}
+
+.top img{
+    display: block;
+}
+
+.top ul{
+    width: 1440px;
+    display: flex;
+    margin-left: 45px;
+}
+
+/* 分類hover效果 */
+
+.top ul li a:hover{
+    color: pink;
+}
+
+.top ul li a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    transition: .5s;
+    background: #fff;
+}
+
+.top ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    top: 100%;
+    right: 0;
+    transition: .5s;
+    background: green;
+}
+
+.top ul li:hover > a::before{
+    width: 50%;
+    transform: translateX(100%);
+}
+
+.top ul li:hover > a::after{
+    width: 50%;
+    transform: translateX(-100%);
+}
+
+.top li{
+    flex-grow: 1;
+}
+
+.login{
+    margin-right: 10px;
+}
