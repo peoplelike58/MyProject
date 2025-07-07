@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/MenuPage.css">
+    <!-- My JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/hamBurger.js"></script>
     <title>Menu</title>
 </head>
 <body>
@@ -23,35 +26,42 @@
     <!-- TOP -->
     <header>
 
-        <div class="top">
-            
             <a href="HomePage.html">
                 <img src="./img/Logo.svg" alt="">
             </a>
             
-            <ul>
-          
-                <li><a href="HomePage.html">Home</a></li>
-          
-                <li><a href="StoryPage.html">Story</a></li>
-          
-                <li><a href="MenuPage.html">Menu</a></li>
-          
-                <li><a href="Events.html">Events</a></li>
-          
-                <li><a href="StorePage.html">Store</a></li>
+            <nav id="menu">
+                
+                    <ul class="transition">
             
-                <li><a href="ContactPage.html">Contact</a></li>
+                        <li><a href="HomePage.html">Home</a></li>
+                
+                        <li><a href="StoryPage.html">Story</a></li>
+                
+                        <li><a href="MenuPage.html">Menu</a></li>
+                
+                        <li><a href="Events.html">Events</a></li>
+                
+                        <li><a href="StorePage.html">Store</a></li>
+                    
+                        <li><a href="ContactPage.html">Contact</a></li>
 
-                <li><a href="OnlineShop.html">Online Shop</a></li>
-          
-            </ul>
+                        <li><a href="OnlineShop.html">Online Shop</a></li>
+                
+                    </ul>
 
-            <div class="login">
-                <img src="./img/line-md_login.svg" alt="">
-            </div>
-     
-        </div>
+                </nav>
+
+                <div class="login">
+                    <img src="./img/line-md_login.svg" alt="">
+                </div>
+
+                <div class="hamburger">
+                    <div class="bar bar1 transition"></div>
+                    <div class="bar bar2 transition"></div>
+                    <div class="bar bar3 transition"></div>
+                </div>
+                
 
     </header>
 

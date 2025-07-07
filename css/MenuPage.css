@@ -9,6 +9,7 @@ body {
     margin: 0 auto;
     font-family: var(--text-style);
     color: var(--text-main-color);
+    margin-top: 50px;
 }
 
 /* main */

@@ -1,14 +1,20 @@
 @import url(react.css);
 
-/* TOP */
-.top{
-    display: flex;
-    width: 100%;
-    height: 90px;
-    align-items: center;
+header {
+  display: flex !important;
+  align-items: center;
+  height: 90px;
 }
 
-.top li a{
+/* TOP */
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+}
+
+nav li a{
     font-family: var(--text-style);
     font-size: 24px;
     text-decoration: none;
@@ -16,23 +22,23 @@
     position: relative;
 }
 
-.top img{
+nav img{
     display: block;
 }
 
-.top ul{
+nav ul{
     width: 100%;
     display: flex;
-    margin-left: 45px;
+    margin-left: 80px;
 }
 
 /* 分類hover效果 */
 
-.top ul li a:hover{
+nav ul li a:hover{
     color: pink;
 }
 
-.top ul li a::before{
+nav ul li a::before{
     content: "";
     position: absolute;
     width: 0;
@@ -43,7 +49,7 @@
     background: #fff;
 }
 
-.top ul li a::after{
+nav ul li a::after{
     content: "";
     position: absolute;
     width: 0;
@@ -54,20 +60,72 @@
     background: green;
 }
 
-.top ul li:hover > a::before{
+nav ul li:hover > a::before{
     width: 50%;
     transform: translateX(100%);
 }
 
-.top ul li:hover > a::after{
+nav ul li:hover > a::after{
     width: 50%;
     transform: translateX(-100%);
 }
 
-.top li{
+nav li{
     flex-grow: 1;
+    line-height: 3.5;
 }
 
 .login{
-    margin-right: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.hamburger{
+    order: 2;
+}
+
+
+
+/* 漢堡按鈕 */
+@media screen and (max-width: 1400px){
+    .hamburger {
+        display: flex;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .transition{
+        transition: .3s;
+    }
+
+    .hamburger .bar{
+        width: 36px;
+        height: 6px;
+        background-color: #F7CD1B;
+        margin: 3px 0;
+        border-radius: 3px;
+    }
+
+    nav ul{
+        display: none;
+        max-width: 150px;
+    }
+
+    nav.active ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 20px;
+        z-index: 100;
+        margin-top: 120px;
+        text-align: center;
+        background-color: black;
+        min-height: calc(10vh - 50px);
+    }
+
+    .hamburger.active .bar1{transform: rotate(-45deg) translate(-9px, 7px);}
+    .hamburger.active .bar2{opacity: 0;}
+    .hamburger.active .bar3{transform: rotate(45deg) translate(-9px, -8px);}
 }
