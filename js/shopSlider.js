@@ -1,14 +1,14 @@
 $(function(){
-  let divWidth = $('.cycle').width()
-  let imgCount =$('.cycleImgList li').length
+  let divWidth = $('.shop').width()
+  let imgCount =$('.shopImgList li').length
   
   for(let i = 0; i < imgCount ;i++){
     $('#contentButton').append(`<li></li>`)
   }
     $('#contentButton li:first').addClass('clicked')
 
-    $('.cycleImgList li').width(divWidth)
-    $('.cycleImgList').width(divWidth * imgCount)
+    $('.shopImgList li').width(divWidth)
+    $('.shopImgList').width(divWidth * imgCount)
 
     let index = 0
     let timer = setInterval(moveToNext, 5000)
@@ -17,7 +17,7 @@ $(function(){
         clearInterval(timer)
         index = $(this).index()
 
-        $('.cycleImgList').animate({
+        $('.shopImgList').animate({
             left: divWidth * index * -1,
         })
 
@@ -35,7 +35,7 @@ $(function(){
             index = 0
         }
 
-        $('.cycleImgList').animate({
+        $('.shopImgList').animate({
             left: divWidth * index * -1,
         })
 

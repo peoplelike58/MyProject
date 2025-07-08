@@ -18,6 +18,7 @@
     <!-- My JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./js/hamBurger.js"></script>
+    <script src="./js/shopSlider.js"></script>
     <title>OnlineShop</title>
 </head>
 <body>
@@ -70,13 +71,15 @@
        <section class="shop">
 
          <!-- 圖片區 -->
-        <div class="shopImgList">
+        <ul class="shopImgList">
 
-            <div class="shopImg"><img src="./img/big_pic.jpg" alt=""></div>
-            <div class="shopImg"><img src="./img/big_pic2.jpg" alt=""></div>
-            <div class="shopImg"><img src="./img/big_pic3.jpg" alt=""></div>
+            <li class="shopImg"><img src="./img/big_pic.jpg" alt=""></li>
+            <li class="shopImg"><img src="./img/big_pic2.jpg" alt=""></li>
+            <li class="shopImg"><img src="./img/big_pic3.jpg" alt=""></li>
 
-        </div>
+        </ul>
+        
+        <ul id="contentButton"></ul>
 
        </section> 
 
