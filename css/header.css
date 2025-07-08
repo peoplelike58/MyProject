@@ -87,7 +87,7 @@ nav li{
 
 
 /* 漢堡按鈕 */
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1280px){
     .hamburger {
         display: flex;
         cursor: pointer;
