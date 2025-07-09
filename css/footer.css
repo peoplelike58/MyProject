@@ -24,6 +24,7 @@
 .bottomText ul{
     width: 100%;
     display: flex;
+    margin-bottom: 10px;
 }
 
 .bottomText ul li{
@@ -35,11 +36,40 @@
 .bottomText ul li img{
     margin-right: 15px;
     margin-left: 50px;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .bottomText ul li p{
     color: var(--text-main-color);
     margin-top: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+
+   .topText p{
+    font-size: 20px;
+   }
+   
+   .bottomText ul li img{
+    margin-left: 5px;
+   }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .topText p{
+     font-size: 16px;
+   }
+
+   .bottomText ul li p{
+    font-size: 14px;
+   }
+
+   .bottomText ul li img{
+    width: 24px;
+    height: auto;
+   }
+
 }
