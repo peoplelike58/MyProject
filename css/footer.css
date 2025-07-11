@@ -8,6 +8,10 @@
     margin: 0 auto;
 }
 
+.topTextP{
+    height: auto;
+}
+
 .topText p{
     color: var(--text-main-color);
     font-family: var(--text-style);
@@ -71,5 +75,50 @@
     width: 24px;
     height: auto;
    }
+
+}
+
+@media screen and (max-width: 730px) {
+
+    .topText p{
+        overflow-wrap: break-word;
+        margin-left: 0;
+    }
+
+    .topIcon{
+        margin: 10px 10px 10px 50px;
+    }
+
+    .bottomText ul li{
+        margin-left: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .bottomText ul li:last-child{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 475px) {
+
+    .bottomText ul li img{
+        display: none;
+    }
+
+    .topIcon{
+        margin: 5px 0px 5px 20px;
+        gap: 10px;
+    }
+
+    .topIcon img{
+        width: 20px;
+        height: auto;
+    }
+
+    .topText p{
+        font-size: 13px;
+    }
 
 }
