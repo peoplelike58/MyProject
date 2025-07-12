@@ -59,6 +59,38 @@ body {
     66%, 100% { transform: scale(1.5); }
 }
 
+.storyText {
+  position: relative;
+  z-index: 1;
+}
+
+/* 網格特效 */
+.gridOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+
+  /* 一行20格 */
+  grid-template-columns: repeat(20, 1fr);
+  grid-auto-rows: 50px;
+  gap: 2px;
+  z-index: 0; /* 在文字下面 */
+  pointer-events: none;
+}
+
+.gridOverlay .cell {
+  /* background: rgba(255,255,255,0.05); */
+  transition: background 0.2s;
+}
+
+.gridOverlay .cell.active {
+  background: rgba(255, 129, 150, 0.8);
+  opacity: 0.3;
+}
+
 /* main-bottom */
 
 .storyText h1{
