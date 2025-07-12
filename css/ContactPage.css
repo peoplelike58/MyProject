@@ -182,3 +182,11 @@ button:active{
         width: 320px;
     }
 }
+
+@media screen and (max-width: 475px) {
+
+    .contactTop h1{
+        font-size: 70px;
+    }
+    
+}

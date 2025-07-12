@@ -325,4 +325,8 @@ h1::before{
     .navList ul{
         margin-left: 20px;
     }
+
+    .main ul{
+        margin-left: 5px;
+    }
 }
