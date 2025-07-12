@@ -10,6 +10,32 @@ body {
     margin-top: 50px;
 }
 
+/* 進度條 */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  z-index: 9999;
+}
+
+.progress-inner {
+  height: 80px;
+  width: 0%;
+  position: relative;
+}
+
+.progress-inner img {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  height: 100%;
+  width: 150px;
+  transition: transform 0.5s ease;
+}
+
 /* main-top */
 
 .storeWrapper{
@@ -89,4 +115,71 @@ body {
 
 iframe{
     border-radius: 10px;
+}
+
+@media screen and (max-width: 760px) {
+    
+    .storeTitle h2{
+        font-size: 18px;
+    }
+
+    .storeIndex p:first-child{
+        font-size: 16px;
+    }
+
+    .storePhoto p{
+        font-size: 18px;
+    }    
+
+}
+
+@media screen and (max-width: 652px) {
+
+    .storeLe{
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+
+    .storeLe.scrollable {
+        overflow-y: auto;
+        max-height: 100%;
+        width: 100%;
+    }
+
+    .storeLe{
+        margin-right: 10px;
+    }
+
+    iframe{
+        width: 250px;
+        height: 550px;
+    }
+
+    .storeWrapper h1{
+        font-size: 80px;
+    }
+
+}
+
+@media screen and (max-width: 475px) {
+
+    .storeTitle h2{
+        font-size: 18px;
+    }
+
+    .storeIndex p:first-child{
+        font-size: 16px;
+    }
+
+    .storePhoto p{
+        font-size: 18px;
+    }
+    
+    iframe{
+        width: 200px;
+        height: 580px;
+    }
+
 }

@@ -6,8 +6,35 @@ body {
 
 .wrapper {
     width: 90%;
+    max-height: 100%;
     margin: 0 auto;
     margin-top: 50px;
+}
+
+/* 進度條 */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  z-index: 9999;
+}
+
+.progress-inner {
+  height: 80px;
+  width: 0%;
+  position: relative;
+}
+
+.progress-inner img {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  height: 100%;
+  width: 150px;
+  transition: transform 0.5s ease;
 }
 
 /* shopTop */
@@ -15,7 +42,7 @@ body {
 .shop{
     position: relative;
     width: 100%;
-    height: 400px;
+    height: auto;
     overflow: hidden;
 }
 
@@ -34,7 +61,7 @@ body {
 
 .shopImg img{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 /* circle button */
@@ -50,8 +77,8 @@ body {
 }
 
 #contentButton li{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background-color: #ccc;
     margin: 10px;
@@ -68,7 +95,9 @@ body {
 .shopWrapper{
     display: flex;
     width: 100%;
+    height: 1800px;
     margin: 0 auto;
+    align-items: flex-start;
 }
 
 .navList{
@@ -79,6 +108,9 @@ body {
     padding-left: 20px;
     margin-right: 20px;
     line-height: 1.6;
+
+    /* 為了不會被內容擠扁 */
+    flex-shrink: 0 
 }
 
 .navList ul{
@@ -197,4 +229,86 @@ h1::before{
     text-decoration: none;
     font-size: 16px;
     color: var(--text-main-color);
+}
+
+
+@media (max-width: 1200px) {
+  .main ul li {
+    flex: 0 1 calc(50% - 20px);
+    margin: 10px;
+  }
+
+  .main img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+  }
+
+   .navList {
+    max-width: 150px;
+    margin-right: 60px;
+    padding-left: 10px;
+    margin-top: 50px;
+  }
+
+  .navList ul {
+    width: 100%;
+  }
+}
+
+@media (max-width: 820px) {
+
+    h1{
+        font-size: 24px;
+    }
+
+    .navList {
+        max-width: 100px;
+        margin-right: 40px;
+        padding-left: 10px;
+        margin-top: 50px;
+    }
+
+    .navList li{
+        font-size: 20px;
+        margin-left: 0;
+    }
+
+    h1::before{
+        height: 20px;
+    }
+
+}
+
+@media (max-width: 630px) {
+
+    h1{
+        font-size: 20px;
+    }
+
+    .navList {
+        max-width: 80px;
+        margin-right: 40px;
+        padding-left: 0px;
+        margin-top: 50px;
+    }
+
+    .navList li{
+        font-size: 16px;
+        margin-left: 0;
+    }
+
+    h1::before{
+        height: 15px;
+    }
+
+    .main h2{
+        font-size: 18px;
+    }
+
+    .main p{
+        font-size: 16px;
+    }
+
 }

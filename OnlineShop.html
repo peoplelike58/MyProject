@@ -19,12 +19,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./js/hamBurger.js"></script>
     <script src="./js/shopSlider.js"></script>
+    <script src="./js/OnlineShopLeft.js"></script>
+    <script src="./js/OnlineListCategory.js"></script>
+    <script src="./js/proGress.js"></script>
     <title>OnlineShop</title>
 </head>
 <body>
         <!-- 底圖 -->
 <div class="wrapper">
     <!-- TOP -->
+    <div class="progress-bar">
+        <div class="progress-inner">
+        <img src="./img/pacman_TOP.gif" alt="icon">
+        </div>
+    </div>
+
     <header>
 
             <a href="HomePage.html">
@@ -90,21 +99,21 @@
                 <div class="list1">
                     <h1>調酒飲料</h1>
                     <ul>
-                        <li>威士忌</li>
-                        <li>伏特加</li>
-                        <li>水果酒</li>
-                        <li>龍舌蘭</li>
-                        <li>葡萄酒</li>
+                        <li data-category="威士忌">威士忌</li>
+                        <li data-category="伏特加">伏特加</li>
+                        <li data-category="水果酒">水果酒</li>
+                        <li data-category="龍舌蘭">龍舌蘭</li>
+                        <li data-category="葡萄酒">葡萄酒</li>
                     </ul>
                 </div>
 
                 <div class="list2">
                     <h1>精美禮品</h1>
                     <ul>
-                        <li>餅乾</li>
-                        <li>食品</li>
-                        <li>酒具</li>
-                        <li>小物</li>
+                        <li data-category="餅乾">餅乾</li>
+                        <li data-category="食品">食品</li>
+                        <li data-category="酒具">酒具</li>
+                        <li data-category="小物">小物</li>
                     </ul>
                 </div>
 
@@ -117,60 +126,78 @@
                 <div class="main">
 
                     <ul>
-                        <li>
+                        <li data-category="威士忌">
                             <img src="./img/event_img001.jpg" alt="">
                             <h2>威士忌調酒</h2>
                             <p>NT$ 300</p>
                             <a href="" class="shopBtn">加入購物車</a>
                         </li>
-                        <li>
+                        <li data-category="伏特加">
                             <img src="./img/event_img002.jpg" alt="">
                             <h2>伏特加調酒</h2>
                             <p>NT$ 300</p>
                             <a href="" class="shopBtn">加入購物車</a>
                         </li>
-                        <li>
+                        <li data-category="龍舌蘭">
                             <img src="./img/event_img003.jpg" alt="">
                             <h2>龍舌蘭調酒</h2>
                             <p>NT$ 300</p>
                             <a href="" class="shopBtn">加入購物車</a>
                         </li>
-                        <li>
+                        <li data-category="水果酒">
+                            <img src="./img/event_img003.jpg" alt="">
+                            <h2>水果調酒</h2>
+                            <p>NT$ 300</p>
+                            <a href="" class="shopBtn">加入購物車</a>
+                        </li>
+                        <li data-category="葡萄酒">
+                            <img src="./img/event_img003.jpg" alt="">
+                            <h2>葡萄酒調酒</h2>
+                            <p>NT$ 300</p>
+                            <a href="" class="shopBtn">加入購物車</a>
+                        </li>
+                        <li data-category="餅乾">
                             <img src="./img/shop001.jpg" alt="">
                             <h2>餅乾禮盒</h2>
                             <p>NT$ 300</p>
                             <a href="" class="shopBtn">加入購物車</a>
                         </li>
-                        <li>
+                        <li data-category="餅乾">
                             <img src="./img/shop002.jpg" alt="">
                             <h2>茶點禮盒</h2>
                             <p>NT$ 300</p>
                             <a href="" class="shopBtn">加入購物車</a>
                         </li>
-                        <li>
+                        <li data-category="食品">
                             <img src="./img/shop003.jpg" alt="">
                             <h2>配酒小吃</h2>
                             <p>NT$ 300</p>
                             <a href="" class="shopBtn">加入購物車</a>
                         </li>
-                        <li>
+                        <li data-category="酒具">
                             <img src="./img/Logo.svg" alt="">
                             <h2>drunk Bar</h2>
                             <p>NT$ 300</p>
                             <a href="" class="shopBtn">加入購物車</a>
                         </li>
-                        <li>
+                        <li data-category="酒具">
                             <img src="./img/Logo.svg" alt="">
                             <h2>drunk Bar</h2>
                             <p>NT$ 300</p>
                             <a href="" class="shopBtn">加入購物車</a>
                         </li>
-                        <li>
+                        <li data-category="小物">
                             <img src="./img/Logo.svg" alt="">
                             <h2>drunk Bar</h2>
                             <p>NT$ 300</p>
                             <a href="" class="shopBtn">加入購物車</a>
-                        </li>                  
+                        </li>
+                        <li data-category="小物">
+                            <img src="./img/Logo.svg" alt="">
+                            <h2>drunk Bar</h2>
+                            <p>NT$ 300</p>
+                            <a href="" class="shopBtn">加入購物車</a>
+                        </li>                    
                     </ul>
 
                 </div>

@@ -10,6 +10,32 @@ body {
     margin-top: 50px;
 }
 
+/* 進度條 */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  z-index: 9999;
+}
+
+.progress-inner {
+  height: 80px;
+  width: 0%;
+  position: relative;
+}
+
+.progress-inner img {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  height: 100%;
+  width: 150px;
+  transition: transform 0.5s ease;
+}
+
 /* contactTop */
 
 .contactTop{
@@ -114,4 +140,45 @@ button {
 button:active{
     color: rgb(255, 129, 150);
     background-color: var(--other-color-2);
+}
+
+
+@media screen and (max-width: 830px) {
+
+    .contactIndex ul li input{
+        width: 250px;
+    }
+    
+    .userEmail,
+    .userCont{
+        width: 590px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+
+    .contactIndex ul li input{
+        width: 200px;
+    }
+    
+    .userEmail,
+    .userCont{
+        width: 500px;
+    }
+
+    .contactTop h1{
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+    .contactIndex ul li input{
+        width: 120px;
+    }
+    
+    .userEmail,
+    .userCont{
+        width: 320px;
+    }
 }

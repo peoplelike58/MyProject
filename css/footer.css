@@ -1,6 +1,16 @@
 @import url(react.css);
 
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    flex: 1;
+}
+
 /* Footer */
+
 .topIcon ul{
     display: flex;
     align-items: center;

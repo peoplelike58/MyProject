@@ -12,6 +12,32 @@ body {
     margin-top: 50px;
 }
 
+/* 進度條 */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  z-index: 9999;
+}
+
+.progress-inner {
+  height: 80px;
+  width: 0%;
+  position: relative;
+}
+
+.progress-inner img {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  height: 100%;
+  width: 150px;
+  transition: transform 0.5s ease;
+}
+
 /* main */
 
 .menuWrapper{
